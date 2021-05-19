@@ -9,13 +9,7 @@ spec:
     - name: apple-app
       image: hashicorp/http-echo
       args:
-        - "-text=apple1"
-    - name: apple-app
-      image: hashicorp/http-echo
-      args:
-        - "-text=apple2"
-        - "-listen=:5678"
-        
+        - "-text=apple"
 ---
 
 kind: Service
@@ -33,7 +27,7 @@ spec:
    - name: apple2
       protocol: TCP
       port: 5679
-      targetPort: 5679
+      targetPort: 5678
       
 ---
 
