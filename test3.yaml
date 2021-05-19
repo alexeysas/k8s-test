@@ -25,7 +25,7 @@ spec:
       protocol: TCP
       port: 5678
       targetPort: 5678
-   - name: apple2
+    - name: apple2
       protocol: TCP
       port: 5679
       targetPort: 5678
